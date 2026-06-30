@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --color-primary: var(--primary);
+  --color-primary-container: var(--primary-container);
+  --color-secondary-container: var(--secondary-container);
+  --color-on-secondary-container: var(--on-secondary-container);
+  --color-surface: var(--surface);
+  --color-surface-container-low: var(--surface-container-low);
+  --color-surface-container-highest: var(--surface-container-highest);
+  --color-background: var(--background);
+  --color-on-background: var(--on-background);
+  --color-outline-variant: var(--outline-variant);
+  --color-error: var(--error);
+}
+
+@layer base {
+  :root {
+    --primary: #001940;
+    --primary-container: #0d2e61;
+    --secondary-container: #dae0ee;
+    --on-secondary-container: #5c636f;
+    --surface: #ffffff;
+    --surface-container-low: #f6f3f2;
+    --surface-container-highest: #e5e2e1;
+    --background: #fcf9f8;
+    --on-background: #1c1b1b;
+    --outline-variant: #c4c6d1;
+    --error: #ba1a1a;
+  }
+
+  .dark {
+    --primary: #8ab4f8;
+    --primary-container: #1e3a8a;
+    --secondary-container: #303134;
+    --on-secondary-container: #e8eaed;
+    --surface: #1a1a1c;
+    --surface-container-low: #202124;
+    --surface-container-highest: #3c4043;
+    --background: #121212;
+    --on-background: #ffffff;
+    --outline-variant: #5f6368;
+    --error: #f28b82;
+  }
+}
+
+body {
+  @apply bg-background text-on-background transition-colors duration-300;
+}
