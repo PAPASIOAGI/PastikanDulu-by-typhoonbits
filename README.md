@@ -1,6 +1,7 @@
 <div align="center">
 
 # ✅ PastikanDulu
+![alt text](<Desain tanpa judul (2).png>)
 
 ### *Smart Check, No Hoax.*
 
