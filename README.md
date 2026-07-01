@@ -79,6 +79,21 @@ NODE_ENV=production npm run start
 - **Input Validation**: Whitelist MIME type, ukuran file, sanitasi input teks
 - **Error Handling**: Error sensitif tidak diekspos ke client
 
+## ⚖️ Responsible AI
+
+Sesuai dengan prinsip pemanfaatan AI yang bertanggung jawab, aplikasi ini dibangun dengan kesadaran penuh akan keterbatasan teknologi kecerdasan buatan:
+
+- **Identifikasi Risiko (Halusinasi & Bias):** Model bahasa (LLM) dapat berhalusinasi atau memberikan konfirmasi yang salah, terutama terhadap berita palsu (*hoaks*) yang sangat baru atau dibuat dengan canggih (contoh: *deepfake*).
+- **Strategi Mitigasi:** 
+  1. Kami menyertakan **Skor Keyakinan (Confidence Score)** sehingga pengguna tahu kapan AI merasa ragu. 
+  2. Fokus sistem bukanlah sekadar menyatakan "Benar" atau "Salah", melainkan merangkum argumen dan menyediakan **Link Referensi Resmi/Media** agar pengguna bisa memverifikasi sendiri.
+- **Peran Penilaian Manusia:** AI dalam aplikasi ini diposisikan sebagai **Pemeriksa Fakta Awal (Asisten)**. Keputusan akhir untuk mempercayai, membagikan, atau menindaklanjuti sebuah informasi sepenuhnya tetap berada pada akal sehat pengguna (manusia).
+
+## 🗄️ Sumber Data (Data Disclosure)
+
+- **Model Fundamental:** Aplikasi ini menggunakan **Google Gemini 2.5 Flash** yang telah dilatih pada sekumpulan besar data teks publik dan internet.
+- **Verifikasi Fakta Indonesia:** Untuk kasus di Indonesia, AI menganalisis informasi dengan membandingkannya terhadap pola hoaks umum serta merujuk pada basis pengetahuan umum (termasuk portal berita terpercaya dan inisiatif *fact-checking* seperti Kominfo atau TurnBackHoax) yang terangkum dalam model pengetahuan internal Gemini.
+
 ## 🛠️ Tech Stack
 
 | Layer | Teknologi |
