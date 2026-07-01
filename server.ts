@@ -12,7 +12,7 @@ const PORT = 3000;
 const IS_PRODUCTION = process.env.NODE_ENV === "production";
 
 // ============================================================================
-// SECURITY: Structured Logging Utility (VULN-12)
+// SECURITY: Structured Logging Utility ((VULN-12))
 // ============================================================================
 function secureLog(level: "info" | "warn" | "error", message: string, meta?: Record<string, unknown>) {
   const timestamp = new Date().toISOString();
