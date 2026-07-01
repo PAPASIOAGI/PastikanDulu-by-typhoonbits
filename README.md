@@ -1,7 +1,21 @@
 <div align="center">
 
 # ✅ PastikanDulu
-![alt text](<Desain tanpa judul (2).png>)
+
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Coba_Sekarang-success?style=for-the-badge&logo=vercel)](https://pastikan-dulu-by-typhoonbits-deploy.vercel.app/)
+
+<br />
+
+<p align="center">
+  <a href="https://pastikan-dulu-by-typhoonbits-deploy.vercel.app/">
+    <img src="Desain tanpa judul (2).png" alt="PastikanDulu Preview" width="48%" style="max-width: 400px; border-radius: 8px; margin: 0 4px;" />
+  </a>
+  <a href="https://pastikan-dulu-by-typhoonbits-deploy.vercel.app/">
+    <img src="PastikanDulu by TyphoonBits.png" alt="PastikanDulu Logo" width="48%" style="max-width: 400px; border-radius: 8px; margin: 0 4px;" />
+  </a>
+</p>
+
+<br />
 
 ### *Smart Check, No Hoax.*
 
