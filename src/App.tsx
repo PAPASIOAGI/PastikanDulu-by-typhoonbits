@@ -78,6 +78,15 @@ export default function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
+    // --- EASTER EGG / WATERMARK ANTI-MALING ---
+    console.log(
+      "%c🛡️ PastikanDulu - Smart Check, No Hoax\n%cOriginal Source Code by rifaizPAPASIOAGI\n%cDilarang keras menduplikasi atau menyalin tanpa izin!",
+      "color: #2563eb; font-size: 24px; font-weight: bold; text-shadow: 1px 1px 0px #000;",
+      "color: #ef4444; font-size: 16px; font-weight: bold; margin-top: 5px;",
+      "color: #f59e0b; font-size: 14px; font-style: italic; margin-top: 5px;"
+    );
+    // ------------------------------------------
+
     const savedTheme = localStorage.getItem('pastikandulu_theme');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
